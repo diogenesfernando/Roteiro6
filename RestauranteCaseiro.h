@@ -1,10 +1,16 @@
 #ifndef RESTAURANTECASEIRO_H
 #define RESTAURANTECASEIRO_H
 
+#include "MesaDeRestaurante.h"
 
-class RestauranteCaseio:Pedido{
+class RestauranteCaseio{
+
 	public:
-		int CalcularTotal();
+		MesaDeRestaurante m[10];	
+
+		void CalcularTotal();
+		void AdicionaAoPedido();
+		void CalculaTotalRestaurante();
 };
 
 #endif

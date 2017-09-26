@@ -1,15 +1,15 @@
 #ifndef MESADERESTAURANTE_H
 #define MESADERESTAURANTE_H
 
+#include "Pedido.h"
 
-class MesaDeRestaurante : Pedido{
+class MesaDeRestaurante{
 	public:
-		int *num = new Pedido();
-		string *desc = new Pedido();
-		int *quant = new Pedido() ;	
-		float *preco= new Pedido();
+		Pedido p[10];
 
-		void AdicionaPedido();
+		void AdicionaAoPedido();
+		void ZeraPedidos();
+		void CalculaTotal();
 };
 
 #endif
